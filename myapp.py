@@ -1,4 +1,4 @@
-import yfinance as np
+import yfinance as yf
 import streamlit as st
 
 st.write("""
@@ -8,7 +8,7 @@ Shown are the **stock closing price** and **volume** of Google!""" )
 
 # https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75
 # define the ticker symol
-tickerSymbol = 'GOOGL'
+tickerSymbol ='GOOGL'
 # GET DATA ON THIS ticker
 tickerData = yf.Ticker(tickerSymbol)
 # get the historical prices for this tickerData
